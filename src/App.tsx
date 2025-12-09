@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import QAPage from "./pages/QAPage";
 import ThanhTuuDoiMoiPage from "./pages/ThanhTuuDoiMoiPage";
+import DacTrung from "./pages/DacTrung";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/giai-doan-3" element={<GiaiDoan3Page />} />
               <Route path="/qa" element={<QAPage />} />
               <Route path="/thanh-tuu" element={<ThanhTuuDoiMoiPage />} />
+              <Route path="/dac-trung" element={<DacTrung />} />
             </Routes>
           </div>
         </main>
