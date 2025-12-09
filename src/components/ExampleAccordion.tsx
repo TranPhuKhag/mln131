@@ -31,54 +31,54 @@ const aiApplications = [
 
 const ExampleAccordion: React.FC = () => {
   return (
-    <section className="relative z-10 w-full flex flex-col items-center justify-center py-14 px-4 bg-blue-50/80">
+    <section className="relative z-10 w-full flex flex-col items-center justify-center py-14 px-4 bg-transparent">
       <motion.h2
-        className="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center drop-shadow"
+        className="text-2xl md:text-3xl font-bold text-orange-300 mb-2 text-center drop-shadow"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        Ứng dụng AI trong môn Lịch sử Đảng Cộng Sản Việt Nam
+        Ứng dụng AI trong môn Chủ nghĩa xã hội khoa học 
       </motion.h2>
       <motion.p
-        className="text-sm md:text-base text-gray-600 mb-7 text-center italic"
+        className="text-sm md:text-base text-slate-400 mb-7 text-center italic"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        *Nội dung bám sát đề cương và giáo trình môn Lịch sử Đảng Cộng Sản Việt Nam.*
+        *Nội dung bám sát đề cương và giáo trình môn Chủ nghĩa xã hội khoa học.*
       </motion.p>
       <Accordion.Root
         type="single"
         collapsible
-        className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl bg-white/90 divide-y divide-blue-100"
+        className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl bg-slate-900/60 divide-y divide-slate-700"
       >
         {aiApplications.map((item, i) => (
           <Accordion.Item
             key={i}
             value={"item-" + i}
-            className="overflow-hidden rounded-2xl mb-3 shadow-lg border border-blue-100"
+            className="overflow-hidden rounded-2xl mb-3 shadow-lg border border-slate-700"
           >
             <Accordion.Header asChild>
               <Accordion.Trigger asChild>
                 <motion.button
-                  className="flex w-full items-center justify-between px-7 py-6 text-lg font-semibold text-blue-700 bg-white group outline-none transition-all duration-200 hover:bg-blue-50 focus:bg-blue-100 rounded-2xl shadow-md"
-                  initial={{ backgroundColor: "#fff" }}
-                  whileHover={{ backgroundColor: "#e0edfa" }}
+                  className="flex w-full items-center justify-between px-7 py-6 text-lg font-semibold text-slate-100 bg-slate-800 group outline-none transition-all duration-200 hover:bg-slate-700 focus:bg-slate-700 rounded-2xl shadow-md"
+                  initial={{ backgroundColor: "#1e293b" }}
+                  whileHover={{ backgroundColor: "#334155" }}
                   whileTap={{ scale: 0.98 }}
                 >
                   <span>{item.title}</span>
                   <span className="ml-2 transition-transform group-data-[state=open]:rotate-180">
-                    <ChevronDown className="w-6 h-6 text-blue-500" />
+                    <ChevronDown className="w-6 h-6 text-orange-400" />
                   </span>
                 </motion.button>
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content asChild>
               <motion.div
-                className="px-7 pb-6 text-base text-gray-700 bg-blue-50/80 rounded-b-2xl border-t border-blue-100"
+                className="px-7 pb-6 text-base text-slate-300 bg-slate-950/60 rounded-b-2xl border-t border-slate-700"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}

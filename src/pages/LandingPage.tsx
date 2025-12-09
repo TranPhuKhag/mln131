@@ -87,7 +87,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Chào mừng đến với môn Lịch sử Đảng Cộng Sản Việt Nam
+              Chào mừng đến môn Chủ Nghĩa Xã Hội Khoa Học 
             </motion.h1>
             <motion.p
               className="text-lg md:text-2xl text-white/90 mb-8 font-medium drop-shadow"
@@ -99,7 +99,7 @@ const LandingPage: React.FC = () => {
             </motion.p>
             <motion.button
               onClick={handleStart}
-              className="bg-[#6e7fdc] hover:bg-[#2a2e6e] text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.6 }}
@@ -153,7 +153,7 @@ const LandingPage: React.FC = () => {
 
             <motion.button
               onClick={handleNextStep}
-              className="bg-[#6e7fdc] hover:bg-[#2a2e6e] text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition mt-8"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition mt-8"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
