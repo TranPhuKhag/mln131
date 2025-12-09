@@ -13,7 +13,7 @@ const menu = [
     to: "/dai-hoi-8-9",
   },
   {
-    label: "GĐ 1",
+    label: "Điều kiện",
     to: "/giai-doan-1",
   },
   {
