@@ -5,6 +5,7 @@ import { ChevronDown, X } from "lucide-react";
 const DacTrung = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const expandedRef = useRef(null);
+  const modalContentRef = useRef(null);
 
   const features = [
     {
@@ -193,21 +194,30 @@ const DacTrung = () => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  // Auto scroll to expanded content
   useEffect(() => {
-    if (expandedIndex !== null && expandedRef.current) {
-      setTimeout(() => {
-        expandedRef.current?.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start',
-          inline: 'nearest'
-        });
-      }, 100);
+    if (expandedIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
     }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
   }, [expandedIndex]);
 
   return (
     <main className="min-h-screen bg-slate-900 pt-24 pb-12">
+      <style>{`
+        /* Ẩn scrollbar cho toàn bộ trang */
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        html {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+      
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -280,42 +290,63 @@ const DacTrung = () => {
           ))}
         </div>
 
-        {/* Expandable Content - Full Width with Modal Style */}
+        {/* Modal Backdrop */}
+        <AnimatePresence>
+          {expandedIndex !== null && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-40 bg-slate-900/90 backdrop-blur-sm"
+              onClick={() => setExpandedIndex(null)}
+            />
+          )}
+        </AnimatePresence>
+
+        {/* Modal Content */}
         <AnimatePresence>
           {expandedIndex !== null && (
             <motion.div
               ref={expandedRef}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/90 backdrop-blur-sm"
-              onClick={() => setExpandedIndex(null)}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ duration: 0.3, type: "spring", stiffness: 300, damping: 30 }}
+              className="fixed inset-0 z-50 flex items-start justify-center pt-8 px-4 pointer-events-none"
             >
-              <motion.div
-                initial={{ y: 50 }}
-                animate={{ y: 0 }}
-                exit={{ y: 50 }}
-                className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden max-w-5xl w-full max-h-[90vh] overflow-y-auto"
+              <div 
+                ref={modalContentRef}
+                className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden w-full max-w-4xl max-h-[calc(100vh-4rem)] flex flex-col pointer-events-auto"
                 onClick={(e) => e.stopPropagation()}
+                style={{
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
+                }}
               >
-                {/* Header */}
-                <div className={`bg-gradient-to-r ${features[expandedIndex].color} p-6 md:p-8 border-b border-slate-700/60 sticky top-0 z-10`}>
+                <style>{`
+                  [data-modal-content]::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}</style>
+                
+                {/* Header - Fixed */}
+                <div className={`bg-gradient-to-r ${features[expandedIndex].color} p-6 md:p-8 border-b border-slate-700/60 flex-shrink-0`}>
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex items-start gap-4 flex-1">
+                    <div className="flex items-start gap-4 flex-1 min-w-0">
                       <span className="text-5xl drop-shadow-lg flex-shrink-0">{features[expandedIndex].icon}</span>
                       <div className="flex-1 min-w-0">
-                        <h2 className="text-2xl md:text-3xl font-bold text-slate-50 mb-2">
+                        <h2 className="text-2xl md:text-3xl font-bold text-slate-50 mb-2 break-words">
                           {features[expandedIndex].title}
                         </h2>
-                        <p className="text-slate-100 text-base md:text-lg">
+                        <p className="text-slate-100 text-base">
                           {features[expandedIndex].description}
                         </p>
                       </div>
                     </div>
                     <button
                       onClick={() => setExpandedIndex(null)}
-                      className="text-slate-100 hover:bg-slate-700/40 rounded-full p-2 transition flex-shrink-0"
+                      className="text-slate-100 hover:bg-slate-700/40 rounded-full p-2 transition flex-shrink-0 mt-1"
                       aria-label="Đóng"
                     >
                       <X className="w-6 h-6" />
@@ -323,8 +354,15 @@ const DacTrung = () => {
                   </div>
                 </div>
 
-                {/* Content Grid */}
-                <div className="p-6 md:p-8 space-y-6">
+                {/* Content - Scrollable */}
+                <div 
+                  data-modal-content
+                  className="overflow-y-auto flex-1 p-6 md:p-8 space-y-6"
+                  style={{
+                    scrollbarWidth: "none",
+                    msOverflowStyle: "none",
+                  }}
+                >
                   {features[expandedIndex].sections.map((section, sectionIndex) => (
                     <motion.div
                       key={sectionIndex}
@@ -337,7 +375,7 @@ const DacTrung = () => {
                       className="space-y-3 bg-slate-900/40 rounded-xl p-5 border border-slate-700/50"
                     >
                       <h3 className="text-lg md:text-xl font-semibold text-orange-300 flex items-center gap-2">
-                        <span className="text-2xl">{sectionIndex + 1}</span>
+                        <span className="text-2xl font-bold">{sectionIndex + 1}</span>
                         {section.subtitle}
                       </h3>
                       <p className="text-slate-200 leading-relaxed text-justify">
@@ -347,8 +385,8 @@ const DacTrung = () => {
                   ))}
                 </div>
 
-                {/* Footer */}
-                <div className="p-6 border-t border-slate-700/60 bg-slate-900/40 text-center">
+                {/* Footer - Fixed */}
+                <div className="p-6 border-t border-slate-700/60 bg-slate-900/40 text-center flex-shrink-0">
                   <button
                     onClick={() => setExpandedIndex(null)}
                     className="inline-flex items-center gap-2 px-6 py-2 bg-orange-500/20 hover:bg-orange-500/30 text-orange-300 rounded-full transition font-medium"
@@ -357,22 +395,10 @@ const DacTrung = () => {
                     Đóng
                   </button>
                 </div>
-              </motion.div>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
-
-        {/* Footer CTA */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center bg-slate-800/60 rounded-2xl p-6 border border-slate-700"
-        >
-          <p className="text-slate-300 text-lg">
-            👆 Bấm vào thẻ để xem chi tiết nội dung
-          </p>
-        </motion.div> */}
       </div>
     </main>
   );
