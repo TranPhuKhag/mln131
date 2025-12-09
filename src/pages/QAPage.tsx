@@ -47,7 +47,7 @@ const QAPage = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-[#f4f7ff] flex flex-col items-center pt-32 px-2"
+      className="min-h-screen bg-slate-900 flex flex-col items-center pt-32 px-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -58,7 +58,7 @@ const QAPage = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-[#2a2e6e] drop-shadow-lg">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-slate-50 drop-shadow-lg">
           Q&A
         </h1>
 
@@ -69,7 +69,7 @@ const QAPage = () => {
         >
           <input
             type="text"
-            className="w-1/3 border rounded-lg px-4 py-3"
+            className="w-1/3 border border-slate-700 bg-slate-800 text-slate-100 placeholder-slate-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
             placeholder="Tên nhóm..."
             value={group}
             onChange={(e) => setGroup(e.target.value)}
@@ -77,7 +77,7 @@ const QAPage = () => {
           />
           <input
             type="text"
-            className="flex-1 border rounded-lg px-4 py-3"
+            className="flex-1 border border-slate-700 bg-slate-800 text-slate-100 placeholder-slate-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
             placeholder="Nhập câu hỏi..."
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
@@ -85,7 +85,7 @@ const QAPage = () => {
           />
           <button
             type="submit"
-            className="bg-[#3a3f8f] text-white px-6 py-3 rounded-lg"
+            className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition"
           >
             Gửi
           </button>
@@ -94,7 +94,7 @@ const QAPage = () => {
         {/* danh sách câu hỏi */}
         <motion.div className="w-full max-w-xl">
           {questions.length === 0 && (
-            <p className="text-gray-500 text-center mt-8">Chưa có câu hỏi nào.</p>
+            <p className="text-slate-400 text-center mt-8">Chưa có câu hỏi nào.</p>
           )}
 
           <AnimatePresence>

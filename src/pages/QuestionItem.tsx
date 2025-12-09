@@ -118,18 +118,18 @@ const QuestionItem: React.FC<{ question: Question }> = ({ question }) => {
 
   return (
     <motion.div
-      className="bg-white rounded-xl shadow p-5 mb-6 border border-[#e0e7ff] text-[#2a2e6e]"
+      className="bg-slate-800 rounded-xl shadow p-5 mb-6 border border-slate-700 text-slate-100"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
     >
       <div className="flex items-center justify-between mb-1">
-        <div className="text-[#6e7fdc] font-semibold">Nhóm: {question.group}</div>
-        {createdAtStr && <div className="text-xs text-gray-500">{createdAtStr}</div>}
+        <div className="text-orange-400 font-semibold">Nhóm: {question.group}</div>
+        {createdAtStr && <div className="text-xs text-slate-400">{createdAtStr}</div>}
       </div>
 
-      <strong className="block mb-1 text-[#3a3f8f]">Câu hỏi:</strong>
+      <strong className="block mb-1 text-orange-300">Câu hỏi:</strong>
       <p className="mb-4">{question.text}</p>
 
       {/* Form nhập tên + bình luận (tên giống kiểu “Tên nhóm…”) */}
@@ -139,7 +139,7 @@ const QuestionItem: React.FC<{ question: Question }> = ({ question }) => {
           placeholder="Tên của bạn (để trống = Ẩn danh)"
           value={authorName}
           onChange={(e) => setAuthorName(e.target.value)}
-          className="border border-[#bfcfff] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#6e7fdc]"
+          className="border border-slate-700 bg-slate-900/60 text-slate-100 placeholder-slate-400 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
         />
         <div className="flex gap-2">
           <input
@@ -147,13 +147,13 @@ const QuestionItem: React.FC<{ question: Question }> = ({ question }) => {
             placeholder="Viết bình luận..."
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
-            className="flex-1 border border-[#bfcfff] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#6e7fdc]"
+            className="flex-1 border border-slate-700 bg-slate-900/60 text-slate-100 placeholder-slate-400 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
             required
             maxLength={500}
           />
           <button
             type="submit"
-            className="bg-[#3a3f8f] text-white px-4 py-2 rounded-lg text-sm font-semibold shadow hover:bg-[#2a2e6e] transition"
+            className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow hover:bg-orange-600 transition"
           >
             Gửi
           </button>
@@ -165,14 +165,14 @@ const QuestionItem: React.FC<{ question: Question }> = ({ question }) => {
         {comments.map((c) => (
           <motion.div
             key={c.id}
-            className="bg-[#f4f7ff] rounded-md px-3 py-2 mb-2 text-sm"
+            className="bg-slate-900/60 rounded-md px-3 py-2 mb-2 text-sm border border-slate-700"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 10 }}
           >
             <div className="flex items-center justify-between">
-              <span className="font-semibold text-[#3a3f8f]">{getAuthorFor(c.id)}</span>
-              <span className="text-xs text-gray-500">{timeAgo(c.createdAt)}</span>
+              <span className="font-semibold text-orange-300">{getAuthorFor(c.id)}</span>
+              <span className="text-xs text-slate-400">{timeAgo(c.createdAt)}</span>
             </div>
             <div>{c.text}</div>
           </motion.div>

@@ -122,16 +122,16 @@ ${input}
   return (
     <>
       <motion.div
-        className="w-full max-w-2xl min-h-[400px] flex flex-col bg-white/80 rounded-2xl shadow-2xl p-8 backdrop-blur border border-white/30 resize-y overflow-auto transition-all duration-300"
+        className="w-full max-w-2xl min-h-[400px] flex flex-col bg-slate-900/60 rounded-2xl shadow-2xl p-8 border border-slate-700 resize-y overflow-auto transition-all duration-300"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <h2 className="text-2xl font-bold mb-1 text-gray-800 text-center">
-          Chatbot AI – Lịch sử Đảng Cộng Sản Việt Nam
+        <h2 className="text-2xl font-bold mb-1 text-slate-50 text-center">
+          Chatbot AI – Chủ Nghĩa Xã Hội Khoa Học
         </h2>
-        <p className="text-center text-gray-500 text-sm mb-4">
-          Ưu tiên trả lời theo <i>Lịch sử Đảng Cộng Sản Việt Nam</i>; có thể
+        <p className="text-center text-slate-400 text-sm mb-4">
+          Ưu tiên trả lời theo <i>Chủ Nghĩa Xã Hội Khoa Học</i>; có thể
           nêu rõ Chương/Mục khi trích dẫn.
         </p>
 
@@ -139,8 +139,8 @@ ${input}
           <button
             className={`px-6 py-2 rounded-lg border font-semibold text-lg transition-all duration-200 ${
               tab === "text"
-                ? "bg-blue-500 text-white shadow"
-                : "bg-white text-blue-500 border-blue-500 hover:bg-blue-50"
+                ? "bg-orange-500 text-white shadow border-orange-500"
+                : "bg-slate-800 text-slate-300 border-slate-600 hover:bg-slate-700"
             } ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
             onClick={() => handleTabChange("text")}
             disabled={loading}
@@ -150,8 +150,8 @@ ${input}
           <button
             className={`px-6 py-2 rounded-lg border font-semibold text-lg transition-all duration-200 ${
               tab === "voice"
-                ? "bg-blue-500 text-white shadow"
-                : "bg-white text-blue-500 border-blue-500 hover:bg-blue-50"
+                ? "bg-orange-500 text-white shadow border-orange-500"
+                : "bg-slate-800 text-slate-300 border-slate-600 hover:bg-slate-700"
             } ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
             onClick={() => handleTabChange("voice")}
             disabled={loading}
@@ -164,8 +164,8 @@ ${input}
           {tab === "text" ? (
             <>
               {messages.length === 0 && (
-                <div className="text-gray-500 text-center mt-12 text-base select-none">
-                  Hãy hỏi bất kỳ điều gì về môn Lịch sử Đảng Cộng Sản Việt Nam!
+                <div className="text-slate-400 text-center mt-12 text-base select-none">
+                  Hãy hỏi bất kỳ điều gì về môn Chủ Nghĩa xã hội khoa học!
                 </div>
               )}
               {messages.map((msg, idx) => (
@@ -176,15 +176,15 @@ ${input}
                   }`}
                 >
                   {msg.role === "bot" && (
-                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200">
+                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700">
                       🤖
                     </span>
                   )}
                   <motion.div
                     className={`max-w-[85%] px-5 py-3 rounded-2xl text-base leading-relaxed shadow-sm cursor-pointer ${
                       msg.role === "user"
-                        ? "bg-blue-500 text-white self-end rounded-br-none"
-                        : "bg-white text-gray-900 self-start border border-gray-200 rounded-bl-none"
+                        ? "bg-orange-500 text-white self-end rounded-br-none"
+                        : "bg-slate-800 text-slate-200 self-start border border-slate-700 rounded-bl-none"
                     }`}
                     initial={{ opacity: 0, x: msg.role === "user" ? 40 : -40 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -200,7 +200,7 @@ ${input}
                     )}
                   </motion.div>
                   {msg.role === "user" && (
-                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-500 text-white">
+                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-orange-500 text-white">
                       👤
                     </span>
                   )}
@@ -211,10 +211,10 @@ ${input}
             <div className="flex flex-col items-center justify-center h-full min-h-[180px]">
               {speaking ? (
                 <div className="flex flex-col items-center justify-center w-full h-full">
-                  <span className="text-6xl mb-2 animate-pulse text-blue-500">
+                  <span className="text-6xl mb-2 animate-pulse text-orange-400">
                     🔊
                   </span>
-                  <span className="text-lg text-blue-600 font-semibold mb-4">
+                  <span className="text-lg text-orange-400 font-semibold mb-4">
                     Đang phát giọng nói...
                   </span>
                   <button
@@ -233,7 +233,7 @@ ${input}
                   </button>
                 </div>
               ) : (
-                <span className="text-gray-400 text-base select-none">
+                <span className="text-slate-400 text-base select-none">
                   Nhập câu hỏi để nghe trả lời bằng giọng nói!
                 </span>
               )}
@@ -243,7 +243,7 @@ ${input}
 
         <div className="flex items-center gap-3 mt-auto">
           <input
-            className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white text-base"
+            className="flex-1 px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-slate-950/60 text-slate-100 placeholder-slate-500 text-base"
             placeholder="Nhập câu hỏi..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -251,7 +251,7 @@ ${input}
             disabled={loading}
           />
           <button
-            className="p-3 rounded-full bg-blue-500 hover:bg-blue-600 transition text-white shadow disabled:opacity-60 disabled:cursor-not-allowed"
+            className="p-3 rounded-full bg-orange-500 hover:bg-orange-600 transition text-white shadow disabled:opacity-60 disabled:cursor-not-allowed"
             onClick={handleSend}
             aria-label="Send"
             disabled={loading || !input.trim()}
@@ -292,7 +292,7 @@ ${input}
             onClick={() => setModalText(null)}
           >
             <motion.div
-              className="bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto p-6 relative"
+              className="bg-slate-800 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto p-6 relative border border-slate-700"
               initial={{ scale: 0.8, opacity: 0, y: 30 }}
               animate={{
                 scale: 1,
@@ -304,13 +304,13 @@ ${input}
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
-              <div className="border-b pb-3 mb-4 flex justify-between items-center">
-                <h2 className="text-xl font-semibold text-gray-800">
+              <div className="border-b border-slate-700 pb-3 mb-4 flex justify-between items-center">
+                <h2 className="text-xl font-semibold text-slate-100">
                   Giải thích chi tiết
                 </h2>
                 <div className="flex gap-2">
                   <button
-                    className="px-3 py-1 text-sm rounded-lg bg-gray-100 hover:bg-gray-200"
+                    className="px-3 py-1 text-sm rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200"
                     onClick={() => {
                       navigator.clipboard.writeText(modalText);
                       setCopyText("Copied!");
@@ -320,7 +320,7 @@ ${input}
                     {copyText}
                   </button>
                   <button
-                    className="text-gray-400 hover:text-gray-600"
+                    className="text-slate-400 hover:text-slate-200"
                     onClick={() => setModalText(null)}
                   >
                     ✖
@@ -329,7 +329,7 @@ ${input}
               </div>
 
               {/* Content */}
-              <div className="prose prose-lg max-w-none leading-relaxed text-gray-700">
+              <div className="prose prose-lg prose-invert max-w-none leading-relaxed text-slate-300">
                 <ReactMarkdown>{modalText}</ReactMarkdown>
               </div>
             </motion.div>
