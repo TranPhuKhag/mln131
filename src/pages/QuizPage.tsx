@@ -18,494 +18,515 @@ const questions: QuizQuestion[] = [
   {
     questionNumber: 1,
     question:
-      "Nhiệm vụ đầu tiên, bức thiết nhất ngay sau Đại thắng mùa Xuân 1975 là gì?",
+      "Theo C.Mác và Ph.Ăngghen, sự chuyển biến của các hình thái kinh tế – xã hội từ thấp đến cao diễn ra theo cơ sở nào?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Hoàn thành thống nhất đất nước về mặt nhà nước.",
+        text: "Mong muốn chủ quan của giai cấp thống trị",
         rationale:
-          "Đúng. Sau 30/4/1975, yêu cầu cấp bách là thống nhất về mặt nhà nước để hợp nhất bộ máy, pháp lý và chủ quyền.",
+          "Sai. Chủ nghĩa duy vật lịch sử bác bỏ quan điểm cho rằng lịch sử chỉ do ý chí của giai cấp thống trị quyết định.",
+        isCorrect: false,
+      },
+      {
+        text: "Quy luật khách quan của lịch sử – tự nhiên",
+        rationale:
+          "Đúng. Mác – Ăngghen khẳng định sự thay thế các hình thái kinh tế – xã hội diễn ra theo các quy luật khách quan của lịch sử – tự nhiên.",
         isCorrect: true,
       },
       {
-        text: "Tiến hành cải tạo xã hội chủ nghĩa ở miền Nam.",
+        text: "Quyết định của Nhà nước",
         rationale:
-          "Sai. Cải tạo xã hội chủ nghĩa là nhiệm vụ quan trọng nhưng không phải bước bức thiết đầu tiên.",
+          "Sai. Nhà nước là bộ phận của kiến trúc thượng tầng, chịu sự quy định của cơ sở kinh tế chứ không phải nguyên nhân quyết định cuối cùng.",
         isCorrect: false,
       },
       {
-        text: "Khắc phục hậu quả nặng nề của chiến tranh.",
+        text: "Sự lựa chọn của từng quốc gia",
         rationale:
-          "Sai. Đây là nhiệm vụ lớn, lâu dài; nhưng trước hết cần thống nhất nhà nước.",
-        isCorrect: false,
-      },
-      {
-        text: "Chuẩn bị cho Đại hội đại biểu toàn quốc lần thứ IV.",
-        rationale:
-          "Sai. Đại hội IV (12/1976) là mốc quan trọng nhưng diễn ra sau khi thống nhất nhà nước.",
+          "Sai. Mỗi quốc gia có con đường riêng, nhưng vẫn vận động trong khuôn khổ các quy luật khách quan chung của lịch sử.",
         isCorrect: false,
       },
     ],
-    hint: "Từ khóa: thống nhất về mặt nhà nước sau 1975.",
-    source: "Giáo trình VNR202 – Chương 3 (1975–1986): Thống nhất đất nước",
+    hint: "Từ khóa: 'lịch sử – tự nhiên', 'quy luật khách quan'.",
+    source: "Giáo trình MLN131 – Chương 2: Học thuyết hình thái KT–XH",
   },
   {
     questionNumber: 2,
     question:
-      'Hội nghị nào của Ban Chấp hành Trung ương Đảng (khóa III) tháng 8-1975 chủ trương: "Hoàn thành thống nhất nước nhà, đưa cả nước tiến nhanh, tiến mạnh, tiến vững chắc lên Chủ nghĩa xã hội"?',
+      "Quy luật cơ bản nhất quyết định sự thay thế các hình thái kinh tế – xã hội là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Hội nghị lần thứ 24.",
+        text: "Quy luật cạnh tranh tự do",
         rationale:
-          "Đúng. Hội nghị Trung ương 24 (8/1975) nêu rõ chủ trương hoàn thành thống nhất và đưa cả nước tiến lên Chủ nghĩa xã hội.",
+          "Sai. Đây là quy luật vận động trong kinh tế thị trường, không phải quy luật cơ bản chi phối sự thay thế các hình thái KT–XH.",
+        isCorrect: false,
+      },
+      {
+        text: "Quy luật giá trị và giá trị thặng dư",
+        rationale:
+          "Sai. Đây là các quy luật kinh tế của sản xuất hàng hóa và CNTB, không phải quy luật cơ bản nhất của mọi hình thái KT–XH.",
+        isCorrect: false,
+      },
+      {
+        text: "Quy luật quan hệ sản xuất phải phù hợp với trình độ của lực lượng sản xuất",
+        rationale:
+          "Đúng. Đây là quy luật 'xương sống' giải thích vì sao các hình thái KT–XH liên tiếp thay thế nhau từ thấp đến cao.",
         isCorrect: true,
       },
       {
-        text: "Hội nghị lần thứ 21.",
+        text: "Quy luật cung – cầu",
         rationale:
-          "Sai. Hội nghị Trung ương 21 (7/1973) tập trung vấn đề miền Nam sau Hiệp định Paris.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị lần thứ 25.",
-        rationale: "Sai. Không phải mốc nêu chủ trương này.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị lần thứ 23.",
-        rationale: "Sai. Không khớp với chủ trương trong câu hỏi.",
+          "Sai. Cung – cầu chủ yếu điều tiết giá cả trên thị trường, không phải quy luật cơ bản cho sự thay thế hình thái KT–XH.",
         isCorrect: false,
       },
     ],
-    hint: "Con số '24' gắn với 8/1975.",
-    source: "Giáo trình VNR202 – Chương 3: Hội nghị Trung ương 24 (8/1975)",
+    hint: "Gợi ý: quy luật 'xương sống' của học thuyết hình thái KT–XH.",
+    source: "Giáo trình MLN131 – Chương 2: Quy luật vận động xã hội",
   },
   {
     questionNumber: 3,
     question:
-      'Sự kiện nào đánh dấu hoàn thành thống nhất về mặt nhà nước và thông qua tên gọi "Cộng hòa Xã hội chủ nghĩa Việt Nam"?',
+      "Theo Lênin, trong những nước chưa trải qua CNTB phát triển cao như Nga trước Cách mạng Tháng Mười, thời kỳ quá độ lên CNXH có đặc điểm gì?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Kỳ họp thứ nhất Quốc hội khóa VI (7/1976).",
+        text: "Ngắn, vì đã có nền sản xuất hiện đại",
         rationale:
-          "Đúng. Quốc hội khóa VI đã quyết định tên nước, quốc kỳ, quốc huy, quốc ca, thủ đô…",
+          "Sai. Ở các nước kém phát triển, xuất phát điểm thấp nên thời kỳ quá độ không thể ngắn.",
+        isCorrect: false,
+      },
+      {
+        text: "Không cần thiết",
+        rationale:
+          "Sai. Lênin khẳng định giữa CNTB và CNXH bắt buộc phải có một thời kỳ quá độ nhất định.",
+        isCorrect: false,
+      },
+      {
+        text: "Rất dài và phức tạp, “như những cơn đau đẻ kéo dài”",
+        rationale:
+          "Đúng. Lênin ví thời kỳ quá độ ở những nước kém phát triển là những 'cơn đau đẻ kéo dài' – lâu dài, quanh co, phức tạp.",
         isCorrect: true,
       },
       {
-        text: "Tổng tuyển cử bầu Quốc hội chung cho cả nước (4/1976).",
+        text: "Không liên quan đến nhiệm vụ của giai cấp công nhân",
         rationale:
-          "Sai. Tổng tuyển cử là tiền đề; tên nước được thông qua tại kỳ họp 7/1976.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Hiệp thương chính trị (11/1975).",
-        rationale:
-          "Sai. Hiệp thương tạo cơ sở chính trị–pháp lý, chưa hoàn tất tên nước.",
-        isCorrect: false,
-      },
-      {
-        text: "Đại hội đại biểu toàn quốc lần thứ IV (12/1976).",
-        rationale:
-          "Sai. Đại hội IV tổng kết và đề ra đường lối; tên nước đã được Quốc hội thông qua trước đó.",
+          "Sai. Giai cấp công nhân và Đảng Cộng sản giữ vai trò lãnh đạo trong toàn bộ thời kỳ quá độ.",
         isCorrect: false,
       },
     ],
-    hint: "Nhớ mốc tháng 7/1976 của Quốc hội khóa VI.",
-    source:
-      "Giáo trình VNR202 – Chương 3: Quốc hội khóa VI, kỳ họp 1 (7/1976)",
+    hint: "Nhớ hình ảnh Lênin dùng: “những cơn đau đẻ kéo dài”.",
+    source: "Giáo trình MLN131 – Chương 3: Thời kỳ quá độ lên CNXH",
   },
   {
     questionNumber: 4,
     question:
-      "Đại hội đại biểu toàn quốc lần thứ IV (12-1976) quyết định đổi tên Đảng Lao động Việt Nam thành gì?",
+      "Tính tất yếu ra đời của chủ nghĩa xã hội bắt nguồn chủ yếu từ yếu tố nào trong lòng xã hội tư bản?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Đảng Cộng sản Đông Dương.",
-        rationale: "Sai. Tên lịch sử thời kỳ trước 1945.",
+        text: "Sự thất bại của chủ nghĩa phong kiến",
+        rationale:
+          "Sai. Phong kiến đã bị tư bản chủ nghĩa thay thế từ trước; đây không phải căn nguyên trực tiếp làm ra đời CNXH.",
         isCorrect: false,
       },
       {
-        text: "Đảng Cộng sản Việt Nam.",
-        rationale: "Đúng. Đại hội IV khôi phục tên Đảng Cộng sản Việt Nam.",
+        text: "Mâu thuẫn giữa lực lượng sản xuất tiên tiến và quan hệ sản xuất tư bản lỗi thời",
+        rationale:
+          "Đúng. Khi LLSX xã hội hóa cao mâu thuẫn gay gắt với chế độ chiếm hữu tư nhân TBCN, đòi hỏi một hình thái KT–XH mới – CNXH.",
         isCorrect: true,
       },
       {
-        text: "Đảng Công Nông Việt Nam.",
-        rationale: "Sai. Không có quyết định đổi tên như vậy.",
+        text: "Công nghệ thông tin phát triển nhanh",
+        rationale:
+          "Sai. Công nghệ là biểu hiện của LLSX phát triển, nhưng bản thân nó không tự sinh ra CNXH nếu QHSX không thay đổi.",
         isCorrect: false,
       },
       {
-        text: "Đảng Xã hội Việt Nam.",
-        rationale: "Sai. Không phải tổ chức cầm quyền.",
+        text: "Thương mại quốc tế mở rộng",
+        rationale:
+          "Sai. Thương mại chỉ làm sâu sắc thêm các mâu thuẫn, còn căn nguyên trực tiếp vẫn là mâu thuẫn LLSX – QHSX.",
         isCorrect: false,
       },
     ],
-    hint: "Tên Đảng hiện hành.",
-    source: "Giáo trình VNR202 – Chương 3: Đại hội IV (12/1976)",
+    hint: "Gợi ý: mâu thuẫn cơ bản trong lòng CNTB.",
+    source: "Giáo trình MLN131 – Chương 3: Tính tất yếu ra đời CNXH",
   },
   {
     questionNumber: 5,
     question:
-      "Về đường lối kinh tế tại Đại hội IV (12-1976), Đảng xác định ưu tiên nào?",
+      "Nhận định nào sau đây đúng với thực tiễn hiện nay liên quan đến quá độ lên CNXH?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Ưu tiên công nghiệp nhẹ trên cơ sở nông nghiệp.",
-        rationale: "Sai. Đây không phải trọng tâm Đại hội IV.",
+        text: "Nhiều nước tư bản phát triển cao đã quá độ thành công lên CNXH",
+        rationale:
+          "Sai. Thực tiễn thế giới cho thấy chưa có nước tư bản phát triển cao nào quá độ thành công lên CNXH.",
         isCorrect: false,
       },
       {
-        text: "Ưu tiên nông nghiệp là mặt trận hàng đầu.",
+        text: "Chỉ có các nước phong kiến lạc hậu mới quá độ được lên CNXH",
         rationale:
-          "Sai một phần bối cảnh. Đại hội IV nhấn mạnh công nghiệp nặng trên cơ sở nông nghiệp & công nghiệp nhẹ.",
+          "Sai. Mác – Lênin không giới hạn CNXH cho một loại hình xuất phát; đây là diễn biến lịch sử cụ thể, không phải quy luật bắt buộc.",
         isCorrect: false,
       },
       {
-        text: "Ưu tiên công nghiệp nặng hợp lý trên cơ sở phát triển nông nghiệp và công nghiệp nhẹ.",
+        text: "Chưa có nước tư bản phát triển cao nào cách mạng xã hội chủ nghĩa nổ ra và giành thắng lợi",
         rationale:
-          "Đúng. Mục tiêu xây dựng cơ sở vật chất kỹ thuật, lấy công nghiệp nặng làm trọng tâm (một cách hợp lý).",
+          "Đúng. Đây là thực tế lịch sử đến nay: các nước xây dựng CNXH đều xuất phát từ trình độ phát triển chưa phải tư bản chủ nghĩa cao.",
         isCorrect: true,
       },
       {
-        text: "Phát triển kinh tế tư nhân và kinh tế quốc doanh.",
+        text: "Quá độ lên CNXH chỉ xảy ra thông qua đấu tranh hòa bình",
         rationale:
-          "Sai về cách diễn đạt trọng tâm trong văn kiện Đại hội IV thời điểm đó.",
+          "Sai. Mác – Lênin khẳng định cách mạng xã hội chủ nghĩa nói chung phải gắn với đấu tranh giai cấp, có thể mang nhiều hình thức.",
         isCorrect: false,
       },
     ],
-    hint: "Từ khóa: công nghiệp nặng (hợp lý).",
-    source: "Giáo trình VNR202 – Chương 3: Đường lối Đại hội IV",
+    hint: "Tập trung vào cụm: 'chưa có nước tư bản phát triển cao...'.",
+    source: "Giáo trình MLN131 – Chương 3: Thời kỳ quá độ và thực tiễn thế giới",
   },
   {
     questionNumber: 6,
     question:
-      "Một hạn chế lớn của Đại hội IV (1976) khi xác định mục tiêu kinh tế là gì?",
+      "Theo học thuyết hình thái kinh tế – xã hội, yếu tố giữ vai trò quyết định cuối cùng đối với sự vận động và phát triển của xã hội là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Xác định nông nghiệp là mặt trận hàng đầu chưa hợp lý.",
+        text: "Chính trị",
         rationale:
-          "Sai. Đại hội IV không đặt nông nghiệp là mặt trận hàng đầu như Đại hội V sau này nhấn mạnh.",
+          "Sai. Chính trị rất quan trọng nhưng thuộc kiến trúc thượng tầng, chịu sự quy định của cơ sở kinh tế.",
         isCorrect: false,
       },
       {
-        text: "Coi nhẹ nhiệm vụ củng cố quốc phòng an ninh.",
-        rationale: "Sai. Đại hội IV không coi nhẹ Quốc phòng – An ninh.",
+        text: "Văn hóa",
+        rationale:
+          "Sai. Văn hóa là một bộ phận của ý thức xã hội, không giữ vai trò quyết định cuối cùng.",
         isCorrect: false,
       },
       {
-        text: "Nóng vội dự kiến hoàn thành cơ bản chuyển từ sản xuất nhỏ lên sản xuất lớn xã hội chủ nghĩa trong ~20 năm.",
+        text: "Kinh tế",
         rationale:
-          "Đúng. Đây là biểu hiện duy ý chí, dự báo thời gian quá ngắn so với thực tế.",
+          "Đúng. Mác nhấn mạnh trong phân tích cuối cùng, sự phát triển của lực lượng sản xuất và quan hệ sản xuất (kinh tế) quyết định sự vận động của toàn bộ đời sống xã hội.",
         isCorrect: true,
       },
       {
-        text: "Chưa chú trọng phát triển khoa học – kỹ thuật.",
+        text: "Tâm lý xã hội",
         rationale:
-          "Sai. Văn kiện có đề cập Khoa học – Kỹ thuật, hạn chế chính nằm ở dự báo duy ý chí.",
+          "Sai. Tâm lý xã hội là hình thái ý thức xã hội, bị tác động sâu sắc bởi tồn tại xã hội.",
         isCorrect: false,
       },
     ],
-    hint: "Điểm 'duy ý chí' về mốc thời gian.",
-    source: "Giáo trình VNR202 – Chương 3: Đánh giá Đại hội IV",
+    hint: "Từ khóa: cơ sở hạ tầng – kiến trúc thượng tầng.",
+    source: "Giáo trình MLN131 – Chương 2: Cơ sở hạ tầng & kiến trúc thượng tầng",
   },
   {
     questionNumber: 7,
     question:
-      'Sự kiện nào được coi là "bước đột phá đầu tiên" trong quá trình tìm tòi đổi mới kinh tế (1975–1986)?',
+      "Theo Mác, nguyên nhân sâu xa khiến hình thái KT–XH tư bản chủ nghĩa không thể đứng yên là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Chỉ thị 100 Trung ương (1/1981).",
+        text: "Sự cạnh tranh quốc tế gay gắt",
         rationale:
-          "Sai. Chỉ thị 100 rất quan trọng nhưng 'đột phá đầu' thường gắn với Hội nghị Trung ương 6 khóa IV (1979).",
+          "Sai. Cạnh tranh làm bộc lộ mâu thuẫn nhưng không phải căn nguyên sâu xa nhất.",
         isCorrect: false,
       },
       {
-        text: "Hội nghị Trung ương 6 khóa IV (8/1979).",
+        text: "Mâu thuẫn nội tại giữa lực lượng sản xuất và quan hệ sản xuất tư bản",
         rationale:
-          "Đúng. Hội nghị Trung ương 6 (1979) chủ trương tháo gỡ để 'sản xuất bung ra'.",
+          "Đúng. Đây là mâu thuẫn cơ bản trong lòng CNTB, tất yếu dẫn tới sự thay thế bằng hình thái KT–XH cao hơn.",
         isCorrect: true,
       },
       {
-        text: "Hội nghị Trung ương 8 khóa V (6/1985).",
+        text: "Chiến tranh giữa các nước tư bản",
         rationale:
-          "Sai. Đây thường được coi là 'đột phá thứ hai' về giá–lương–tiền.",
+          "Sai. Chiến tranh là kết quả của các mâu thuẫn kinh tế – chính trị, không phải căn nguyên sâu xa nhất của sự thay thế hình thái KT–XH.",
         isCorrect: false,
       },
       {
-        text: "Đại hội V (3/1982).",
-        rationale: "Sai. Đại hội V tổng kết và điều chỉnh, không là 'đột phá đầu'.",
+        text: "Sự ra đời của các ngành công nghiệp mới",
+        rationale:
+          "Sai. Ngành mới chỉ là biểu hiện của LLSX phát triển; vấn đề là nó xung đột với QHSX cũ.",
         isCorrect: false,
       },
     ],
-    hint: "Nhớ mốc 1979 và cụm 'bung ra'.",
-    source: "Giáo trình VNR202 – Chương 3: Hội nghị Trung ương 6 (8/1979)",
+    hint: "Nhìn vào mối quan hệ giữa LLSX và QHSX trong CNTB.",
+    source: "Giáo trình MLN131 – Chương 2: Mâu thuẫn cơ bản của CNTB",
   },
   {
     questionNumber: 8,
     question:
-      "Mục đích chủ yếu của Hội nghị Trung ương 6 (8/1979) khi khắc phục khuyết điểm trong quản lý kinh tế là gì?",
+      "Khẳng định nào sau đây đúng với quan điểm duy vật lịch sử?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Tập trung vốn cho công trình trọng điểm.",
+        text: "Ý thức xã hội quyết định tồn tại xã hội",
         rationale:
-          "Sai. Không phải ý chính được nhấn mạnh như một 'đột phá'.",
+          "Sai. Đây là quan điểm duy tâm lịch sử, đặt ý thức lên trước tồn tại xã hội.",
         isCorrect: false,
       },
       {
-        text: "Phá bỏ rào cản để cho 'sản xuất bung ra'.",
+        text: "Tồn tại xã hội quyết định ý thức xã hội",
         rationale:
-          "Đúng. Trọng tâm là tháo gỡ cơ chế kìm hãm để thúc đẩy sản xuất.",
+          "Đúng. Mác khẳng định tồn tại xã hội (đời sống vật chất) quyết định ý thức xã hội, dù ý thức có tính độc lập tương đối.",
         isCorrect: true,
       },
       {
-        text: "Hoàn thành cải tạo xã hội chủ nghĩa ở miền Nam.",
-        rationale: "Sai. Không phải mục đích trọng tâm của Hội nghị Trung ương 6 (1979).",
+        text: "Con người có thể chủ động thay đổi mọi quy luật xã hội",
+        rationale:
+          "Sai. Con người có thể nhận thức và vận dụng quy luật, nhưng không thể xóa bỏ hay tạo ra quy luật tùy ý.",
         isCorrect: false,
       },
       {
-        text: "Đổi mới công tác cán bộ.",
-        rationale: "Sai. Đây không phải trục chính của quyết sách kinh tế Hội nghị.",
+        text: "Ý thức có thể vượt trước và thay đổi quy luật kinh tế",
+        rationale:
+          "Sai. Ý thức có thể đi trước, dự báo, nhưng không thể thay đổi bản thân quy luật khách quan.",
         isCorrect: false,
       },
     ],
-    hint: "Cụm từ 'sản xuất bung ra'.",
-    source: "Giáo trình VNR202 – Chương 3: Nội dung Hội nghị Trung ương 6 (1979)",
+    hint: "Nhớ cặp khái niệm: tồn tại xã hội ↔ ý thức xã hội.",
+    source: "Giáo trình MLN131 – Chương 2: Chủ nghĩa duy vật lịch sử",
   },
   {
     questionNumber: 9,
     question:
-      "Chỉ thị 100 Trung ương (1/1981) về khoán sản phẩm trong Hợp tác xã nông nghiệp quy định trọng tâm nào?",
+      "Theo nội dung bài học, sự thay thế phong kiến → tư bản → xã hội chủ nghĩa diễn ra chủ yếu do:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Xã viên được giao khoán và tự do định giá sản phẩm.",
+        text: "Quyết định của nhà nước phong kiến",
         rationale:
-          "Sai. Cơ chế giá còn chịu quản lý; không 'tự do định giá' đầy đủ.",
+          "Sai. Nhà nước phong kiến thường chống lại sự ra đời của phương thức sản xuất mới.",
         isCorrect: false,
       },
       {
-        text: "Xã viên nhận mức khoán theo diện tích, tự làm các khâu cấy, chăm sóc, thu hoạch.",
+        text: "Tư tưởng cách mạng của quần chúng",
         rationale:
-          "Đúng. Khoán đến nhóm/người lao động gắn với diện tích, sản lượng và trách nhiệm.",
+          "Sai. Tư tưởng cách mạng rất quan trọng nhưng nó bắt nguồn từ những mâu thuẫn kinh tế – xã hội khách quan.",
+        isCorrect: false,
+      },
+      {
+        text: "Mâu thuẫn trong chính phương thức sản xuất cũ",
+        rationale:
+          "Đúng. Khi mâu thuẫn giữa LLSX phát triển và QHSX lỗi thời trong phương thức sản xuất cũ trở nên gay gắt sẽ dẫn đến cách mạng xã hội và sự thay thế hình thái KT–XH.",
         isCorrect: true,
       },
       {
-        text: "Hợp tác xã chỉ làm đất và thủy lợi.",
+        text: "Sự giúp đỡ từ các nước khác",
         rationale:
-          "Sai. Hợp tác xã vẫn giữ nhiều khâu tổ chức – dịch vụ, không chỉ 2 khâu.",
-        isCorrect: false,
-      },
-      {
-        text: "Sản lượng vượt khoán phải nộp lại 50% cho Hợp tác xã.",
-        rationale:
-          "Sai. Quy định vượt khoán được hưởng khuyến khích, không phải mẫu số 50% cố định.",
+          "Sai. Yếu tố quốc tế có tác động, nhưng căn nguyên quyết định vẫn nằm trong mâu thuẫn nội tại của mỗi xã hội.",
         isCorrect: false,
       },
     ],
-    hint: "Từ khóa: khoán đến nhóm/người và diện tích.",
-    source: "Giáo trình VNR202 – Chương 3: Chỉ thị 100 (1/1981)",
+    hint: "Tập trung vào 'mâu thuẫn nội tại' của mỗi hình thái KT–XH.",
+    source: "Giáo trình MLN131 – Chương 2: Sự thay thế các hình thái KT–XH",
   },
   {
     questionNumber: 10,
     question:
-      "Đại hội V (3-1982) bổ sung nhận thức nào về thời kỳ quá độ lên Chủ nghĩa xã hội ở Việt Nam?",
+      "Theo Lênin, thời kỳ quá độ từ CNTB lên CNXH ở các nước kém phát triển có đặc điểm:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Khẳng định đã cơ bản hoàn thành thời kỳ quá độ.",
-        rationale: "Sai. Việt Nam còn ở giai đoạn đầu.",
+        text: "Không có đối kháng giai cấp",
+        rationale:
+          "Sai. Trong thời kỳ quá độ vẫn tồn tại đấu tranh giai cấp với nhiều hình thức khác nhau.",
         isCorrect: false,
       },
       {
-        text: "Khẳng định đang ở chặng đường đầu tiên của thời kỳ quá độ lên Chủ nghĩa xã hội.",
+        text: "Rất ngắn vì kinh tế đã sẵn sàng",
         rationale:
-          "Đúng. Đại hội V xác định rõ ta đang ở chặng đầu của thời kỳ quá độ.",
+          "Sai. Xuất phát điểm thấp khiến thời kỳ quá độ ở các nước này càng lâu dài và phức tạp.",
+        isCorrect: false,
+      },
+      {
+        text: "“Những cơn đau đẻ kéo dài” – phức tạp và lâu dài",
+        rationale:
+          "Đúng. Lênin dùng hình ảnh này để nhấn mạnh tính quanh co, kéo dài, nặng nề về kinh tế – xã hội của thời kỳ quá độ.",
         isCorrect: true,
       },
       {
-        text: "Nhiệm vụ chính là thực hiện khoán sản phẩm trong nông nghiệp.",
+        text: "Không cần công nghiệp hóa",
         rationale:
-          "Sai. Khoán sản phẩm quan trọng nhưng không phải 'nhận thức mới' trung tâm.",
-        isCorrect: false,
-      },
-      {
-        text: "Nhiệm vụ chính là xóa bỏ cơ chế bao cấp ngay lập tức.",
-        rationale:
-          "Sai. Đường lối chuyển đổi từng bước, chưa 'ngay lập tức'.",
+          "Sai. Ngược lại, công nghiệp hóa là nhiệm vụ trung tâm của thời kỳ quá độ ở các nước kém phát triển.",
         isCorrect: false,
       },
     ],
-    hint: "Cụm: 'chặng đường đầu tiên'.",
-    source: "Giáo trình VNR202 – Chương 3: Đại hội V (3/1982)",
+    hint: "Liên hệ lại hình ảnh ví von trong bài giảng của Lênin.",
+    source: "Giáo trình MLN131 – Chương 3: Đặc điểm thời kỳ quá độ",
   },
   {
     questionNumber: 11,
     question:
-      "Trong chặng đường đầu tiên (Đại hội V), mặt trận hàng đầu cần tập trung phát triển mạnh mẽ là gì?",
+      "Lý do khiến thời kỳ quá độ ở Việt Nam kéo dài hơn so với mô hình dự báo của Mác – Ăngghen là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Công nghiệp nặng và giao thông vận tải.",
+        text: "Việt Nam là nước tư bản phát triển cao",
         rationale:
-          "Sai. Khác với định hướng Đại hội IV; Đại hội V điều chỉnh trọng tâm ngắn hạn.",
+          "Sai. Việt Nam quá độ lên CNXH từ một xuất phát điểm thấp, không phải TBCN phát triển cao.",
         isCorrect: false,
       },
       {
-        text: "Quốc phòng và an ninh.",
-        rationale: "Sai. Không phải 'mặt trận hàng đầu' kinh tế ở chặng đầu.",
-        isCorrect: false,
-      },
-      {
-        text: "Sản xuất nông nghiệp, hàng tiêu dùng và xuất khẩu.",
+        text: "Việt Nam chuyển lên từ nền kinh tế nông nghiệp lạc hậu, thuộc địa – phong kiến",
         rationale:
-          "Đúng. Đại hội V nhấn mạnh 3 chương trình: nông nghiệp, hàng tiêu dùng, xuất khẩu.",
+          "Đúng. Xuất phát điểm thấp, bị chiến tranh tàn phá khiến nhiệm vụ thời kỳ quá độ nặng nề, nên kéo dài là tất yếu khách quan.",
         isCorrect: true,
       },
       {
-        text: "Văn hóa, giáo dục và y tế.",
+        text: "Việt Nam có tài nguyên nghèo nàn",
         rationale:
-          "Sai. Đây là lĩnh vực quan trọng nhưng không là 'mặt trận hàng đầu' kinh tế lúc đó.",
+          "Sai. Điều kiện tài nguyên có ảnh hưởng nhưng không phải lý do lý luận chính giải thích tính kéo dài của thời kỳ quá độ.",
+        isCorrect: false,
+      },
+      {
+        text: "Giai cấp công nhân quá đông",
+        rationale:
+          "Sai. Trước Cách mạng, giai cấp công nhân Việt Nam còn non trẻ, số lượng không lớn.",
         isCorrect: false,
       },
     ],
-    hint: "Ba trụ: nông nghiệp – tiêu dùng – xuất khẩu.",
-    source: "Giáo trình VNR202 – Chương 3: Chủ trương Đại hội V",
+    hint: "Gợi ý: xuất phát điểm kinh tế – xã hội của Việt Nam trước 1945.",
+    source:
+      "Giáo trình MLN131 – Chương 3: Đặc điểm thời kỳ quá độ lên CNXH ở Việt Nam",
   },
   {
     questionNumber: 12,
     question:
-      'Sự kiện nào được coi là "đột phá thứ hai" trong tìm tòi đổi mới kinh tế (khóa V)?',
+      "Lực lượng đóng vai trò động lực và lãnh đạo trong cách mạng xã hội chủ nghĩa là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Hội nghị Trung ương 6 khóa IV (8/1979).",
-        rationale: "Sai. Đó là đột phá thứ nhất.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Trung ương 7 khóa V (12/1984).",
-        rationale: "Sai. Không phải mốc 'đột phá thứ hai'.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Trung ương 8 khóa V (6/1985).",
+        text: "Giai cấp nông dân",
         rationale:
-          "Đúng. Đột phá về xoá bỏ cơ chế tập trung quan liêu bao cấp, lấy giá–lương–tiền làm khâu đột phá.",
+          "Sai. Nông dân là lực lượng cách mạng quan trọng nhưng không giữ vai trò lãnh đạo.",
+        isCorrect: false,
+      },
+      {
+        text: "Trí thức",
+        rationale:
+          "Sai. Trí thức có vai trò to lớn về khoa học – văn hóa, song không phải lực lượng lãnh đạo về mặt giai cấp.",
+        isCorrect: false,
+      },
+      {
+        text: "Giai cấp công nhân và Đảng Cộng sản",
+        rationale:
+          "Đúng. Giai cấp công nhân với đội tiên phong là Đảng Cộng sản giữ vai trò lãnh đạo cách mạng xã hội chủ nghĩa.",
         isCorrect: true,
       },
       {
-        text: "Hội nghị Bộ Chính trị khóa V (8/1986).",
+        text: "Toàn bộ giai cấp tư sản tiến bộ",
         rationale:
-          "Sai. Thường được coi là đột phá thứ ba, mở đường Đại hội VI.",
+          "Sai. Giai cấp tư sản về cơ bản đối lập lợi ích với CNXH, không thể là lực lượng lãnh đạo cách mạng XHCN.",
         isCorrect: false,
       },
     ],
-    hint: "Nhớ mốc 6/1985 và 'giá–lương–tiền'.",
-    source: "Giáo trình VNR202 – Chương 3: Hội nghị Trung ương 8 (6/1985)",
+    hint: "Nhớ luận điểm: giai cấp công nhân – lực lượng lãnh đạo cách mạng XHCN.",
+    source: "Giáo trình MLN131 – Chương 3: Giai cấp công nhân & CNXH",
   },
   {
     questionNumber: 13,
     question:
-      'Nội dung cốt lõi của "đột phá thứ hai" (Hội nghị Trung ương 8, 6-1985) là gì?',
+      "Trong hình thái kinh tế – xã hội, “cơ sở hạ tầng” bao gồm:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Tiếp tục đẩy mạnh cải tạo xã hội chủ nghĩa ở miền Nam.",
-        rationale: "Sai. Trọng tâm là cải cách cơ chế quản lý kinh tế.",
+        text: "Toàn bộ thiết chế chính trị",
+        rationale:
+          "Sai. Thiết chế chính trị thuộc về kiến trúc thượng tầng, không phải cơ sở hạ tầng.",
         isCorrect: false,
       },
       {
-        text: "Tập trung vốn cho ba chương trình kinh tế lớn.",
+        text: "Hệ thống pháp luật",
         rationale:
-          "Sai. Ba chương trình là định hướng, không phải 'khâu đột phá' về cơ chế.",
+          "Sai. Pháp luật là bộ phận của kiến trúc thượng tầng.",
         isCorrect: false,
       },
       {
-        text: "Xoá bỏ cơ chế tập trung quan liêu bao cấp, lấy giá–lương–tiền làm khâu đột phá.",
+        text: "Quan hệ sản xuất",
         rationale:
-          "Đúng. Đây là bước chuyển quan trọng về cơ chế quản lý kinh tế.",
+          "Đúng. Cơ sở hạ tầng gồm toàn bộ các quan hệ sản xuất tạo thành cơ cấu kinh tế của xã hội.",
         isCorrect: true,
       },
       {
-        text: "Xóa hết trạm kiểm soát hàng hóa trên các tuyến.",
+        text: "Tư tưởng, tôn giáo",
         rationale:
-          "Sai. Biện pháp hành chính không phải nội dung cốt lõi của đột phá.",
+          "Sai. Tư tưởng, tôn giáo là hình thái ý thức xã hội, thuộc kiến trúc thượng tầng.",
         isCorrect: false,
       },
     ],
-    hint: "Từ khóa: cơ chế & giá–lương–tiền.",
-    source: "Giáo trình VNR202 – Chương 3: Cải cách 'giá–lương–tiền' 1985",
+    hint: "Tách bạch: cái gì thuộc 'quan hệ sản xuất' – cái gì thuộc 'thiết chế chính trị'.",
+    source:
+      "Giáo trình MLN131 – Chương 2: Cơ sở hạ tầng & kiến trúc thượng tầng",
   },
   {
     questionNumber: 14,
     question:
-      'Hội nghị nào được coi là "đột phá thứ ba" và bước quyết định dẫn tới đường lối Đổi mới (Đại hội VI)?',
+      "Nhận định nào sau đây thể hiện đúng bản chất của hình thái KT–XH cộng sản chủ nghĩa?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Hội nghị Trung ương 6 khóa IV (8/1979).",
-        rationale: "Sai. Đột phá thứ nhất.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Trung ương 8 khóa V (6/1985).",
-        rationale: "Sai. Đột phá thứ hai.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Bộ Chính trị khóa V (8/1986).",
+        text: "Xóa bỏ hoàn toàn sản xuất hàng hóa",
         rationale:
-          "Đúng. Họp 8/1986 được xem là bước quyết định chín muồi tư duy đổi mới.",
+          "Sai. Ở giai đoạn đầu (CNXH) vẫn còn tồn tại nhiều yếu tố sản xuất hàng hóa.",
+        isCorrect: false,
+      },
+      {
+        text: "Xã hội không còn giai cấp và không còn bóc lột",
+        rationale:
+          "Đúng. Ở giai đoạn cao của CSCN, chế độ tư hữu tư bản bị xóa bỏ, không còn giai cấp đối kháng và tình trạng người bóc lột người.",
         isCorrect: true,
       },
       {
-        text: "Hội nghị Trung ương 6 khóa V (7/1984).",
-        rationale: "Sai. Không phải 'đột phá thứ ba'.",
+        text: "Nhà nước trở nên toàn trị, kiểm soát toàn bộ kinh tế",
+        rationale:
+          "Sai. Trái lại, ở giai đoạn cao, nhà nước dần tiêu vong khi những cơ sở tồn tại của nó không còn.",
+        isCorrect: false,
+      },
+      {
+        text: "Không cần phát triển lực lượng sản xuất",
+        rationale:
+          "Sai. Lực lượng sản xuất phải phát triển rất cao mới tạo điều kiện vật chất cho CSCN.",
         isCorrect: false,
       },
     ],
-    hint: "Mốc 8/1986 ngay trước Đại hội VI (12/1986).",
-    source: "Giáo trình VNR202 – Chương 3: Bối cảnh tiền Đại hội VI",
+    hint: "Đọc kỹ đặc trưng 'không còn giai cấp, không còn bóc lột'.",
+    source: "Giáo trình MLN131 – Chương 3: Đặc trưng hình thái KT–XH CSCN",
   },
   {
     questionNumber: 15,
     question:
-      'Chủ trương quan trọng nhất của "đột phá thứ ba" (Bộ Chính trị khóa V, 8/1986) liên quan tới cơ cấu sản xuất là gì?',
+      "Khi C.Mác nói “sự phát triển của xã hội loài người là một quá trình lịch sử – tự nhiên”, ông muốn nhấn mạnh rằng:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Ưu tiên đầu tư lớn cho công nghiệp nặng.",
+        text: "Con người không thể tác động vào xã hội",
         rationale:
-          "Sai. Quan điểm lúc này điều chỉnh để giải quyết thiếu đói, hàng tiêu dùng.",
+          "Sai. Con người có thể tác động vào xã hội nhưng phải dựa trên việc hiểu và vận dụng các quy luật khách quan.",
         isCorrect: false,
       },
       {
-        text: "Điều chỉnh lớn cơ cấu theo hướng lấy nông nghiệp là mặt trận hàng đầu, phát triển mạnh công nghiệp nhẹ; công nghiệp nặng có chọn lọc.",
+        text: "Sự phát triển hoàn toàn ngẫu nhiên",
         rationale:
-          "Đúng. Đây là chuyển hướng quan trọng để thực tế hóa mục tiêu ổn định – phát triển.",
+          "Sai. 'Lịch sử – tự nhiên' nghĩa là có quy luật khách quan, không phải ngẫu nhiên.",
+        isCorrect: false,
+      },
+      {
+        text: "Sự vận động xã hội tuân theo quy luật khách quan",
+        rationale:
+          "Đúng. Mác muốn khẳng định lịch sử có tính quy luật khách quan, giống như tự nhiên, chứ không do ý chí chủ quan chi phối.",
         isCorrect: true,
       },
       {
-        text: "Hoàn thành cải tạo xã hội chủ nghĩa ở miền Nam trong 5 năm.",
-        rationale: "Sai. Không phản ánh trọng tâm cơ cấu sản xuất của đột phá.",
-        isCorrect: false,
-      },
-      {
-        text: "Chuyển hẳn ngân hàng sang hạch toán kinh doanh xã hội chủ nghĩa.",
+        text: "Mọi chuyển biến xã hội đều dựa trên đạo đức",
         rationale:
-          "Sai. Hạch toán là nội dung cải cách, nhưng câu hỏi hỏi về cơ cấu sản xuất.",
+          "Sai. Đạo đức là một hình thái ý thức; căn nguyên sâu xa của biến đổi xã hội nằm ở kinh tế và các quy luật khách quan.",
         isCorrect: false,
       },
     ],
-    hint: "Nông nghiệp – công nghiệp nhẹ, công nghiệp nặng có chọn lọc.",
+    hint: "Từ khóa: 'quy luật khách quan', không phải 'ngẫu nhiên' hay 'ý chí'.",
     source:
-      "Giáo trình VNR202 – Chương 3: Điều chỉnh cơ cấu 8/1986 và tiền Đổi mới",
+      "Giáo trình MLN131 – Chương 2: Quan niệm duy vật về lịch sử xã hội loài người",
   },
 ];
 
@@ -563,20 +584,20 @@ const Quiz: React.FC = () => {
     q.answerOptions.findIndex((opt) => opt.isCorrect);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f4f7ff] py-10 px-2">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 py-10 px-2">
       <motion.div
-        className="w-full max-w-2xl bg-white/90 rounded-2xl shadow-xl p-6 md:p-10"
+        className="w-full max-w-2xl bg-slate-800/90 rounded-2xl shadow-xl p-6 md:p-10"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2a2e6e] via-[#6e7fdc] to-[#3a3f8f] mb-8 text-center drop-shadow">
-          Quiz ôn tập lý thuyết
+        <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 mb-8 text-center drop-shadow">
+          Quiz ôn tập – Chủ Nghĩa Xã Hội Khoa Học
         </h2>
 
         {current < questions.length ? (
           <>
-            <div className="text-lg font-medium mb-6 text-gray-800 text-center">
+            <div className="text-lg font-medium mb-6 text-slate-100 text-center">
               Câu {current + 1}/{questions.length}:<br />
               <span className="font-semibold">
                 {questions[current].question}
@@ -595,12 +616,12 @@ const Quiz: React.FC = () => {
                   else if (isSelected && !isCorrect)
                     btnClass = "bg-red-500 text-white border-red-600";
                   else if (isCorrect)
-                    btnClass = "bg-green-100 border-green-400 text-green-700";
-                  else btnClass = "bg-blue-100 border-blue-300 text-blue-700";
+                    btnClass = "bg-green-900/40 border-green-400 text-green-300";
+                  else btnClass = "bg-slate-700 border-slate-600 text-slate-300";
                 } else {
                   btnClass = isSelected
-                    ? "bg-blue-200 border-blue-400 text-blue-900"
-                    : "bg-blue-100 border-blue-300 text-blue-700 hover:bg-blue-200";
+                    ? "bg-orange-500 border-orange-400 text-white"
+                    : "bg-slate-700 border-slate-600 text-slate-200 hover:bg-slate-600";
                 }
                 return (
                   <motion.button
@@ -616,7 +637,6 @@ const Quiz: React.FC = () => {
               })}
             </div>
 
-            {/* FEEDBACK: Vì sao đúng & vì sao sai */}
             {(showFeedback || isAnswered) && (
               <motion.div
                 className="text-left mb-4"
@@ -642,39 +662,36 @@ const Quiz: React.FC = () => {
                       </div>
 
                       {!isCorrectAnswer && (
-                        <div className="bg-red-50 border-l-4 border-red-400 p-3 rounded">
-                          <div className="font-semibold text-red-700 mb-1">
+                        <div className="bg-red-900/30 border-l-4 border-red-400 p-3 rounded">
+                          <div className="font-semibold text-red-300 mb-1">
                             Vì sao bạn chọn sai:
                           </div>
-                          <div className="text-gray-800">
+                          <div className="text-slate-200">
                             {opts[chosenIdx].rationale}
                           </div>
                         </div>
                       )}
 
-                      <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
-                        <div className="font-semibold text-green-700 mb-1">
+                      <div className="bg-green-900/30 border-l-4 border-green-500 p-3 rounded">
+                        <div className="font-semibold text-green-300 mb-1">
                           Đáp án đúng:&nbsp;
                           {String.fromCharCode(65 + correctIdx)}.{" "}
                           {opts[correctIdx].text}
                         </div>
-                        <div className="text-gray-800">
+                        <div className="text-slate-200">
                           {opts[correctIdx].rationale}
                         </div>
                       </div>
 
-                      <div className="bg-white border border-gray-200 p-3 rounded">
-                        <div className="font-semibold text-gray-800 mb-2">
+                      <div className="bg-slate-900/60 border border-slate-700 p-3 rounded">
+                        <div className="font-semibold text-slate-200 mb-2">
                           Vì sao các phương án khác sai:
                         </div>
-                        <ul className="list-disc pl-5 space-y-2 text-gray-800">
+                        <ul className="list-disc pl-5 space-y-2 text-slate-300">
                           {opts.map((op, i) => {
-                            if (i === correctIdx) return null; // bỏ đáp án đúng
+                            if (i === correctIdx) return null;
                             if (!op.rationale) return null;
-                            // nếu đã nêu “vì sao bạn chọn sai” ở trên thì bỏ qua phương án đã chọn,
-                            // tránh lặp lại cùng một rationale
-                            if (!isCorrectAnswer && i === chosenIdx)
-                              return null;
+                            if (!isCorrectAnswer && i === chosenIdx) return null;
                             return (
                               <li key={i}>
                                 <span className="font-medium">
@@ -694,20 +711,20 @@ const Quiz: React.FC = () => {
 
             <div className="flex justify-between items-center mt-6">
               <button
-                className="px-5 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition disabled:opacity-50"
+                className="px-5 py-2 bg-slate-700 text-slate-200 rounded-lg hover:bg-slate-600 transition disabled:opacity-50"
                 onClick={handlePrev}
                 disabled={current === 0}
               >
                 Câu trước
               </button>
               <button
-                className="px-5 py-2 bg-yellow-400 text-yellow-900 rounded-lg hover:bg-yellow-500 transition disabled:opacity-50"
+                className="px-5 py-2 bg-yellow-500 text-yellow-900 rounded-lg hover:bg-yellow-600 transition disabled:opacity-50"
                 onClick={() => setShowHint(!showHint)}
               >
                 Gợi ý
               </button>
               <button
-                className="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition disabled:opacity-50"
+                className="px-5 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition disabled:opacity-50"
                 onClick={handleNext}
                 disabled={!isAnswered}
               >
@@ -716,7 +733,7 @@ const Quiz: React.FC = () => {
             </div>
 
             <motion.div
-              className="mt-4 p-4 text-center bg-yellow-50 text-yellow-800 border-l-4 border-yellow-400 rounded-lg"
+              className="mt-4 p-4 text-center bg-yellow-900/30 text-yellow-200 border-l-4 border-yellow-400 rounded-lg"
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: showHint ? 1 : 0,
@@ -735,11 +752,11 @@ const Quiz: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="text-2xl font-bold text-blue-700 mb-2">
+            <div className="text-2xl font-bold text-orange-400 mb-2">
               Hoàn thành!
             </div>
-            <div className="text-lg mb-4">
-              Bạn đúng <span className="text-green-600 font-bold">{score}</span>
+            <div className="text-lg mb-4 text-slate-100">
+              Bạn đúng <span className="text-green-400 font-bold">{score}</span>
               /{questions.length} câu.
             </div>
 
@@ -750,7 +767,7 @@ const Quiz: React.FC = () => {
                 !questions[idx]?.answerOptions[ans]?.isCorrect
             ) && (
               <div className="mt-6 text-left max-w-xl mx-auto">
-                <div className="font-semibold text-red-600 mb-2">
+                <div className="font-semibold text-red-400 mb-2">
                   Các câu bạn trả lời sai, hãy lưu ý:
                 </div>
                 <ul className="space-y-4">
@@ -759,18 +776,25 @@ const Quiz: React.FC = () => {
                     !q.answerOptions[answers[idx] as number].isCorrect ? (
                       <li
                         key={idx}
-                        className="bg-red-50 border-l-4 border-red-400 p-4 rounded"
+                        className="bg-red-900/30 border-l-4 border-red-400 p-4 rounded"
                       >
-                        <div className="font-medium text-gray-800 mb-1">
+                        <div className="font-medium text-slate-100 mb-1">
                           Câu {idx + 1}: {q.question}
                         </div>
-                        <div className="text-gray-700 mb-1">
+                        <div className="text-slate-200 mb-1">
                           <span className="font-semibold">Đáp án đúng:</span>{" "}
-                          {String.fromCharCode(65 + findCorrectAnswerIndex(q))}.{" "}
-                          {q.answerOptions[findCorrectAnswerIndex(q)].text}
+                          {String.fromCharCode(
+                            65 + findCorrectAnswerIndex(q)
+                          )}
+                          .{" "}
+                          {
+                            q.answerOptions[
+                              findCorrectAnswerIndex(q)
+                            ].text
+                          }
                         </div>
-                        <div className="text-gray-600 text-sm italic">
-                          {`Giải thích: ` +
+                        <div className="text-slate-300 text-sm italic">
+                          {"Giải thích: " +
                             q.answerOptions[
                               findCorrectAnswerIndex(q)
                             ].rationale.substring(5)}
@@ -783,7 +807,7 @@ const Quiz: React.FC = () => {
             )}
 
             <button
-              className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              className="mt-8 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
               onClick={resetQuiz}
             >
               Làm lại Quiz

@@ -39,18 +39,18 @@ const quickLinks = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-white/30 text-[#2a2e6e] py-8 px-4 mt-10 backdrop-blur-lg border-t border-white/20 shadow-inner">
+    <footer className="w-full bg-slate-800 text-slate-300 py-8 px-4 border-t border-slate-700">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start">
-          <span className="text-2xl font-extrabold mb-2 tracking-wide text-[#2a2e6e] drop-shadow-lg">
-            VNR202
+          <span className="text-2xl font-extrabold mb-2 tracking-wide text-slate-100">
+            Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội
           </span>
-          <span className="text-sm text-[#3a3f8f]/70">
-            © {new Date().getFullYear()} VNR202 - GD1708. All rights reserved.
+          <span className="text-sm text-slate-400">
+            © {new Date().getFullYear()} MLN131 - 3W_MLN131_02. All rights reserved.
           </span>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <span className="font-semibold mb-1 text-[#3a3f8f]">
+          <span className="font-semibold mb-1 text-slate-200">
             Liên kết nhanh
           </span>
           <div className="flex flex-wrap gap-3">
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#2a2e6e]/80 hover:text-[#6e7fdc] transition text-sm font-medium"
+                className="text-slate-400 hover:text-orange-400 transition text-sm font-medium"
               >
                 {link.name}
               </a>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <span className="font-semibold mb-1 text-[#3a3f8f]">Kết nối</span>
+          <span className="font-semibold mb-1 text-slate-200">Kết nối</span>
           <div className="flex gap-4">
             {socials.map((s) => (
               <a
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#2a2e6e]/70 hover:text-[#6e7fdc] transition"
+                className="text-slate-400 hover:text-orange-400 transition"
                 aria-label={s.name}
               >
                 {s.icon}
