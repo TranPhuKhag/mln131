@@ -95,8 +95,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Lịch sử Đảng Cộng Sản Việt Nam — Quá trình lãnh đạo cách mạng và xây dựng đất nước 🏛️
-            </motion.p>
+Cơ sở lý luận Mác – Lênin về con đường đi lên chủ nghĩa xã hội ở Việt Nam 🇻🇳            </motion.p>
             <motion.button
               onClick={handleStart}
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition"
