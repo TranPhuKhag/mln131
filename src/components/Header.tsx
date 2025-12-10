@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import Logo from "../../public/logo.webp";
 
 // ...existing code...
 
@@ -50,7 +49,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src={Logo}
+            src="/logo.webp"
             alt="Logo"
             className="w-18 h-9 rounded-l shadow-md bg-white/70 p-1"
           />
