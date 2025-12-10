@@ -23,8 +23,8 @@ const LandingPage: React.FC = () => {
 
   const introSteps = [
     {
-      title: "Tư tưởng Hồ Chí Minh",
-      subtitle: "Nền tảng tư tưởng cho cách mạng Việt Nam",
+      title: "Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội",
+      subtitle: "Chủ nghĩa xã hội là giai đoạn đầu của hình thái kinh tế – xã hội cộng sản chủ nghĩa, điều kiện ra đời và những đặc trưng bản chất của chủ nghĩa xã hội.",
       actionText: "Tiếp tục",
     },
     {
