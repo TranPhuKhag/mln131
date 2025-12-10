@@ -13,20 +13,12 @@ const menu = [
     to: "/dai-hoi-8-9",
   },
   {
-    label: "GĐ 1",
+    label: "Điều kiện",
     to: "/giai-doan-1",
   },
   {
-    label: "GĐ 2",
-    to: "/giai-doan-2",
-  },
-  {
-    label: "GĐ 3",
-    to: "/giai-doan-3",
-  },
-  {
-    label: "Thành Tựu",
-    to: "/thanh-tuu",
+    label: "Đặc Trưng",
+    to: "/dac-trung",
   },
   { label: "Quiz", to: "/quiz" },
   { label: "Chatbot", to: "/chatbot" },

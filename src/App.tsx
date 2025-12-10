@@ -5,12 +5,10 @@ import ChatbotPage from "./pages/ChatbotPage";
 import CaseStudyPage from "./pages/CaseStudyPage";
 import DaiHoi89Page from "./pages/DaiHoi89Page";
 import GiaiDoan1Page from "./pages/GiaiDoan1Page";
-import GiaiDoan2Page from "./pages/GiaiDoan2Page";
-import GiaiDoan3Page from "./pages/GiaiDoan3Page";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import QAPage from "./pages/QAPage";
-import ThanhTuuDoiMoiPage from "./pages/ThanhTuuDoiMoiPage";
+import DacTrung from "./pages/DacTrung";
 
 function App() {
   return (
@@ -26,10 +24,8 @@ function App() {
               <Route path="/ai-usage" element={<CaseStudyPage />} />
               <Route path="/dai-hoi-8-9" element={<DaiHoi89Page />} />
               <Route path="/giai-doan-1" element={<GiaiDoan1Page />} />
-              <Route path="/giai-doan-2" element={<GiaiDoan2Page />} />
-              <Route path="/giai-doan-3" element={<GiaiDoan3Page />} />
               <Route path="/qa" element={<QAPage />} />
-              <Route path="/thanh-tuu" element={<ThanhTuuDoiMoiPage />} />
+              <Route path="/dac-trung" element={<DacTrung />} />
             </Routes>
           </div>
         </main>
