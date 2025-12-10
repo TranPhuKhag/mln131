@@ -48,21 +48,6 @@ const voSanCards = [
   },
 ];
 
-const recapCards = [
-  {
-    title: "Điều kiện kinh tế",
-    desc: "Lực lượng sản xuất dưới chủ nghĩa tư bản phát triển mạnh, mang tính xã hội hóa cao, trong khi quan hệ sản xuất tư bản chủ nghĩa dựa trên chiếm hữu tư nhân trở nên lỗi thời và kìm hãm.",
-  },
-  {
-    title: "Điều kiện chính trị – xã hội",
-    desc: "Mâu thuẫn giai cấp giữa công nhân và tư sản ngày càng gay gắt; giai cấp công nhân trưởng thành cùng với sự ra đời của Đảng Cộng sản – đội tiên phong tổ chức và lãnh đạo đấu tranh cách mạng.",
-  },
-  {
-    title: "Cách mạng vô sản",
-    desc: "Con đường tất yếu để lật đổ nhà nước tư sản, thiết lập nhà nước chuyên chính vô sản và xây dựng chủ nghĩa xã hội, tiến tới hình thái kinh tế – xã hội cộng sản chủ nghĩa.",
-  },
-];
-
 const GiaiDoan1Page: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-50">
@@ -74,6 +59,7 @@ const GiaiDoan1Page: React.FC = () => {
               src={dieukienImg}
               alt="Điều kiện ra đời chủ nghĩa xã hội"
               className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectPosition: "50% 35%" }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/70 to-slate-900/35" />
 
@@ -89,21 +75,6 @@ const GiaiDoan1Page: React.FC = () => {
               <p className="text-sm md:text-base text-slate-200 max-w-2xl">
                 Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển
               </p>
-
-              <div className="flex flex-wrap items-center gap-3 text-xs text-slate-200">
-                <span className="inline-flex items-center gap-1 rounded-full bg-slate-900/60 px-3 py-1 border border-white/10">
-                  <span>✍️</span>
-                  <span>Tác giả: Minh Cường</span>
-                </span>
-                <span className="inline-flex items-center gap-1 rounded-full bg-slate-900/60 px-3 py-1 border border-white/10">
-                  <span>📅</span>
-                  <span>Cập nhật: 2025</span>
-                </span>
-                <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/20 text-orange-100 px-3 py-1 border border-orange-300/30">
-                  <span>📚</span>
-                  <span>Tổng hợp kiến thức</span>
-                </span>
-              </div>
             </div>
           </div>
         </div>
@@ -118,6 +89,7 @@ const GiaiDoan1Page: React.FC = () => {
               src={macLeninImg}
               alt="Điều kiện hình thành CNXH"
               className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectPosition: "50% 35%" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
             <div className="relative px-4 py-4 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
@@ -185,6 +157,7 @@ const GiaiDoan1Page: React.FC = () => {
               src={sosanhImg}
               alt="Hình ảnh minh họa"
               className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectPosition: "50% 35%" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
             <div className="relative px-4 py-3 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
