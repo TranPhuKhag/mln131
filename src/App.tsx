@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import QAPage from "./pages/QAPage";
 import DacTrung from "./pages/DacTrung";
+import ViDuPage from "./pages/ViDu";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/giai-doan-1" element={<GiaiDoan1Page />} />
               <Route path="/qa" element={<QAPage />} />
               <Route path="/dac-trung" element={<DacTrung />} />
+              <Route path="/vi-du" element={<ViDuPage />} />
             </Routes>
           </div>
         </main>
