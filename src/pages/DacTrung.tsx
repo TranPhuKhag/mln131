@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, X } from "lucide-react";
 
 const DacTrung = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const expandedRef = useRef(null);
   const modalContentRef = useRef(null);
 
