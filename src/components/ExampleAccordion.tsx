@@ -33,7 +33,7 @@ const ExampleAccordion: React.FC = () => {
   return (
     <section className="relative z-10 w-full flex flex-col items-center justify-center py-14 px-4 bg-transparent">
       <motion.h2
-        className="text-2xl md:text-3xl font-bold text-orange-300 mb-2 text-center drop-shadow"
+        className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 mb-2 text-center drop-shadow"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

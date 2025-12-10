@@ -58,7 +58,7 @@ const QAPage = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-slate-50 drop-shadow-lg">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 drop-shadow-lg">
           Q&A
         </h1>
 
