@@ -19,21 +19,10 @@ const menu = [
     to: "/giai-doan-1",
   },
   {
-    label: "GĐ 2",
-    to: "/giai-doan-2",
-  },
-  {
-    label: "GĐ 3",
-    to: "/giai-doan-3",
-  },
-  {
     label: "Đặc Trưng",
     to: "/dac-trung",
   },
-  {
-    label: "Thành Tựu",
-    to: "/thanh-tuu",
-  },
+ 
   {
     label: "Ví Dụ",
     to: "/vi-du",

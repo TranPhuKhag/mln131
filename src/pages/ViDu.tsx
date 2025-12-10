@@ -301,27 +301,7 @@ const ViDuPage: React.FC = () => {
             </section>
 
             {/* Notes area */}
-            <section className="mt-6">
-              <div className="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 space-y-3">
-                <h3 className="text-sm font-semibold text-slate-100 flex items-center gap-2">
-                  <span>📝</span>
-                  <span>Ghi chú của bạn</span>
-                </h3>
-                <p className="text-xs text-slate-400">
-                  Hãy chọn 1 đặc trưng CNXH mà bạn ấn tượng nhất trong thực tiễn Việt Nam và giải thích tại sao.
-                </p>
-                <textarea
-                  className="mt-1 w-full min-h-[120px] rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400"
-                  placeholder="Ví dụ: Tôi ấn tượng với đặc trưng 'Xã hội do nhân dân làm chủ' vì..."
-                />
-                <button
-                  type="button"
-                  className="inline-flex items-center justify-center rounded-xl border border-slate-600 px-4 py-1.5 text-xs font-medium text-slate-100 hover:bg-slate-800/80 transition"
-                >
-                  💾 Lưu tạm (local)
-                </button>
-              </div>
-            </section>
+            
           </article>
         </div>
       </div>
