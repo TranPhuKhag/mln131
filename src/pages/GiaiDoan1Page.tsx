@@ -1,4 +1,7 @@
 import React from "react";
+import dieukienImg from "../assets/dieukien.png";
+import macLeninImg from "../assets/mac-lenin-04.png";
+import sosanhImg from "../assets/sosanh.png";
 
 const mocKinhTe = [
   {
@@ -37,11 +40,11 @@ const voSanCards = [
   },
   {
     title: "Phương thức",
-    desc: "Thường được thực hiện bằng bạo lực cách mạng, đập tan bộ máy nhà nước tư sản, thiết lập nhà nước chuyên chính vô sản làm công cụ xây dựng xã hội mới.",
+    desc: "Thường được thực hiện bằng bạo lực cách mạng, lập nhà nước chuyên chính vô sản làm công cụ xây dựng xã hội mới.",
   },
   {
     title: "Mục tiêu",
-    desc: "Cải tạo toàn diện xã hội cũ, xây dựng quan hệ sản xuất xã hội chủ nghĩa phù hợp với trình độ xã hội hóa của lực lượng sản xuất, tiến tới hình thái kinh tế – xã hội cộng sản chủ nghĩa.",
+    desc: "Cải tạo xã hội cũ, xây dựng quan hệ sản xuất xã hội chủ nghĩa phù hợp với trình độ xã hội hóa lực lượng sản xuất, tiến tới kinh tế – xã hội cộng sản chủ nghĩa.",
   },
 ];
 
@@ -64,195 +67,130 @@ const GiaiDoan1Page: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-50">
       {/* Header Section */}
-      <header className="px-4 py-8 lg:py-12">
+      <header className="px-4 py-6 lg:py-10">
         <div className="max-w-6xl mx-auto">
-          {/* Top Bar */}
-          <div className="mb-8">
-            <div className="text-xs uppercase tracking-widest text-slate-400">
-              HỌC THUYẾT MÁC – LÊNIN · Hình thái KT-XH • Thời kỳ quá độ • CNXH
-            </div>
+          <div className="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-800/60 shadow-xl">
+            <img
+              src={dieukienImg}
+              alt="Điều kiện ra đời chủ nghĩa xã hội"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/70 to-slate-900/35" />
 
-            {/* Main Title */}
-            <h1 className="mt-2 text-2xl md:text-3xl font-bold leading-snug">
-              Điều kiện ra đời chủ nghĩa xã hội
-            </h1>
+            <div className="relative p-6 md:p-10 lg:p-12 space-y-3 max-w-3xl">
+              <div className="text-[11px] md:text-xs uppercase tracking-[0.25em] text-slate-300">
+                HỌC THUYẾT MÁC – LÊNIN · Hình thái KT-XH • Thời kỳ quá độ • CNXH
+              </div>
 
-            <p className="mt-2 text-sm text-slate-300">
-              Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển
-            </p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow">
+                Điều kiện ra đời chủ nghĩa xã hội
+              </h1>
 
-            {/* Metadata */}
-            <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-400">
-              <span className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-3 py-1">
-                <span>✍️</span>
-                <span>Tác giả: Minh Cường</span>
-              </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-3 py-1">
-                <span>📅</span>
-                <span>Cập nhật: 2025</span>
-              </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/10 text-orange-300 px-3 py-1">
-                <span>📚</span>
-                <span>Tổng hợp kiến thức</span>
-              </span>
+              <p className="text-sm md:text-base text-slate-200 max-w-2xl">
+                Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3 text-xs text-slate-200">
+                <span className="inline-flex items-center gap-1 rounded-full bg-slate-900/60 px-3 py-1 border border-white/10">
+                  <span>✍️</span>
+                  <span>Tác giả: Minh Cường</span>
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-slate-900/60 px-3 py-1 border border-white/10">
+                  <span>📅</span>
+                  <span>Cập nhật: 2025</span>
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/20 text-orange-100 px-3 py-1 border border-orange-300/30">
+                  <span>📚</span>
+                  <span>Tổng hợp kiến thức</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      {/* Main Content Area */}
       <main className="px-4 py-8 lg:py-12">
         <div className="max-w-6xl mx-auto space-y-8">
-          
-          {/* Central Illustration Block */}
-          <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60">
-            <div className="h-40 md:h-56 bg-gradient-to-r from-orange-400/20 via-fuchsia-500/10 to-sky-400/20" />
-            <p className="px-4 py-3 text-xs text-slate-300 border-t border-slate-700/60">
-              Tổng quan các luận điểm cốt lõi và quy luật vận động của lịch sử xã hội.
-            </p>
+
+          {/* Ảnh điều kiện */}
+          <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 shadow-lg min-h-[260px] lg:min-h-[320px] flex flex-col">
+            <img
+              src={macLeninImg}
+              alt="Điều kiện hình thành CNXH"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
+            <div className="relative px-4 py-4 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
+              Minh họa tổng quan về các điều kiện hình thành CNXH.
+            </div>
           </div>
 
-          {/* Introductory Paragraph */}
           <div className="space-y-3">
             <p className="text-sm md:text-base text-slate-200 leading-relaxed">
               Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển, sự xuất hiện của chủ nghĩa xã hội gắn với quy luật vận động của chủ nghĩa tư bản và vai trò lịch sử của giai cấp công nhân hiện đại.
             </p>
           </div>
 
-          {/* Section 1: Điều kiện kinh tế */}
+          {/* Section 1 */}
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">
-              1. Điều kiện kinh tế
-            </h2>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed font-semibold">
-              Cơ sở kinh tế của sự ra đời chủ nghĩa xã hội
-            </p>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed">
-              Chủ nghĩa xã hội chỉ có thể ra đời khi bản thân chủ nghĩa tư bản phát triển đến trình độ nhất định, làm chín muồi lực lượng sản xuất và bộc lộ những mâu thuẫn không thể khắc phục trong khuôn khổ quan hệ sản xuất tư bản chủ nghĩa.
-            </p>
+            <h2 className="text-xl font-semibold text-orange-300">1. Điều kiện kinh tế</h2>
 
-            {/* 4 Mốc */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
               {mocKinhTe.map((moc, idx) => (
-                <div
-                  key={moc.title}
-                  className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4"
-                >
-                  <p className="text-xs font-semibold text-orange-300 mb-2">
-                    Mốc {idx + 1}
-                  </p>
+                <div key={moc.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4">
+                  <p className="text-xs font-semibold text-orange-300 mb-2">Mốc {idx + 1}</p>
                   <h3 className="font-bold text-slate-100 mb-2">{moc.title}</h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    {moc.desc}
-                  </p>
+                  <p className="text-sm text-slate-300 leading-relaxed">{moc.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Section 2: Điều kiện chính trị – xã hội */}
+          {/* Section 2 */}
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">
-              2. Điều kiện chính trị – xã hội
-            </h2>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed font-semibold">
-              Mâu thuẫn giai cấp và vai trò của giai cấp công nhân
+            <h2 className="text-xl font-semibold text-orange-300">2. Điều kiện chính trị – xã hội</h2>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Mâu thuẫn giai cấp ngày càng sâu sắc và sự trưởng thành của giai cấp công nhân, cùng sự ra đời của Đảng Cộng sản,
+              tạo tiền đề chính trị – xã hội cho cách mạng.
             </p>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed">
-              Mâu thuẫn kinh tế trong lòng chủ nghĩa tư bản biểu hiện thành mâu thuẫn chính trị – xã hội giữa giai cấp công nhân và giai cấp tư sản, làm xuất hiện lực lượng xã hội có khả năng lãnh đạo cuộc cách mạng xã hội chủ nghĩa.
-            </p>
-
-            {/* 2 Cards */}
-            <div className="grid md:grid-cols-2 gap-4 mt-4">
-              {chinhTriCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4"
-                >
-                  <h3 className="text-base font-bold text-slate-100 mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    {card.desc}
-                  </p>
+            <div className="grid md:grid-cols-2 gap-4 mt-2">
+              {chinhTriCards.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5">
+                  <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Section 3: Cách mạng vô sản */}
+          {/* Section 3 */}
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">
-              3. Cách mạng vô sản
-            </h2>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed font-semibold">
-              Con đường chuyển từ chủ nghĩa tư bản lên chủ nghĩa xã hội
+            <h2 className="text-xl font-semibold text-orange-300">3. Cách mạng vô sản</h2>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Khi điều kiện kinh tế và chính trị – xã hội đã chín muồi, cách mạng vô sản trở thành con đường tất yếu thay thế chế độ tư bản bằng chế độ xã hội chủ nghĩa.
             </p>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed">
-              Khi điều kiện kinh tế và chính trị – xã hội đã chín muồi, cách mạng vô sản trở thành con đường tất yếu để thay thế chế độ tư bản chủ nghĩa bằng chế độ xã hội chủ nghĩa, tiến tới cộng sản chủ nghĩa.
-            </p>
-
-            {/* 3 Cards */}
-            <div className="grid md:grid-cols-3 gap-4 mt-4">
-              {voSanCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4"
-                >
-                  <h3 className="text-base font-bold text-slate-100 mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    {card.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm md:text-base text-slate-300 italic mt-4">
-              Về lý thuyết, con đường hòa bình có thể xảy ra trong một số hoàn cảnh đặc biệt, nhưng lịch sử hiện đại cho thấy còn rất hiếm và chưa trở thành xu hướng chủ đạo.
-            </p>
-
-            {/* Illustrative Image Placeholder */}
-            <div className="mt-4">
-              <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60">
-                <div className="h-40 md:h-56 bg-gradient-to-r from-orange-400/20 via-fuchsia-500/10 to-sky-400/20" />
-                <p className="px-4 py-3 text-xs text-slate-300 border-t border-slate-700/60">
-                  Minh hoạ mang tính biểu tượng về sự chuyển giao giữa hai chế độ xã hội.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Recap Section */}
-          <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">
-              Recap nhanh
-            </h2>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed font-semibold">
-              Ba điều kiện cốt lõi của sự ra đời chủ nghĩa xã hội
-            </p>
-            <p className="text-sm md:text-base text-slate-200 leading-relaxed">
-              Tóm tắt ngắn gọn các cơ sở kinh tế, chính trị – xã hội và con đường cách mạng để hình thành hình thái kinh tế – xã hội cộng sản chủ nghĩa.
-            </p>
-
-            {/* 3 Recap Cards */}
-            <div className="grid md:grid-cols-3 gap-4 mt-4">
-              {recapCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4"
-                >
-                  <h3 className="text-base font-bold text-slate-100 mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    {card.desc}
-                  </p>
+            <div className="grid md:grid-cols-3 gap-4 mt-2">
+              {voSanCards.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5">
+                  <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
+
+          {/* Ảnh so sánh */}
+          <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 mt-6 shadow-lg h-[230px] lg:h-[280px] flex flex-col">
+            <img
+              src={sosanhImg}
+              alt="Hình ảnh minh họa"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
+            <div className="relative px-4 py-3 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
+              Hình minh họa sự khác biệt giữa các điều kiện kinh tế – chính trị – xã hội.
+            </div>
+          </div>
 
         </div>
       </main>
