@@ -2,6 +2,8 @@ import React from "react";
 import macLeninImg from "../assets/mac-lenin-anh-minh-hoa.jpg";
 import hinhThangBacImg from "../assets/hinh_thang_bac_rong_net_hon.png";
 import hinhThaiKinhTeImg from "../assets/hinh_thai_kinh_te.png";
+import leninImg from "../assets/lenin.png";
+import leninJfifImg from "../assets/lenin.jfif";
 
 const ChuNghiaXaHoiPage: React.FC = () => {
   return (
@@ -31,17 +33,17 @@ const ChuNghiaXaHoiPage: React.FC = () => {
             <div className="space-y-4">
               <div className="text-7xl md:text-8xl font-bold text-slate-800/30">01</div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-50">
-                Luận điểm cốt lõi
+                Theo
+              C.Mác & Ph.Ăngghen
               </h2>
               <p className="text-slate-300 leading-relaxed">
-                C.Mác và Ph.Ăngghen không nhìn lịch sử qua lăng kính anh hùng cá nhân, mà qua sự vận động của các Hình thái kinh tế - xã hội (HTKT-XH).
-              </p>
+                Vận dụng quan điểm duy vật về lịch sử để nghiên cứu xã hội loài người, C.Mác và Ph.Ăngghen xây dựng nên học thuyết hình thái kinh tế - xã hội.
+                              </p>
               <blockquote className="border-l-4 border-orange-500 bg-slate-800/40 pl-4 py-3 italic text-orange-200/80">
-                "Sự chuyển biến từ HTKT-XH thấp lên cao là một quá trình lịch sử – tự nhiên."
+                "Theo các ông C. Mác và Ph. Ăngghen, sự chuyển biến từ hình thái kinh tế xã hội thấp lên hình thái kinh tế – xã hội cao là một quá trình lịch sử – tự nhiên."
               </blockquote>
               <p className="text-sm text-slate-400">
-                → Xã hội loài người phát triển theo quy luật khách quan, không phụ thuộc vào ý muốn chủ quan.
-              </p>
+Sự thay thế hình thái kinh tế – xã hội tư bản chủ nghĩa bằng hình thái kinh tế – xã hội cộng sản chủ nghĩa.              </p>
             </div>
             <div className="relative order-1 lg:order-2">
               <img 
@@ -66,7 +68,7 @@ const ChuNghiaXaHoiPage: React.FC = () => {
             <div className="space-y-4 order-1 lg:order-2">
               <div className="text-7xl md:text-8xl font-bold text-slate-800/30">02</div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-50">
-                Các nấc thang lịch sử
+                Các hình thái kinh tế - xã hội
               </h2>
               <p className="text-slate-300 leading-relaxed">
                 Lịch sử nhân loại là sự thay thế kế tiếp nhau của các hình thái kinh tế - xã hội, từ thấp đến cao.
@@ -102,20 +104,20 @@ const ChuNghiaXaHoiPage: React.FC = () => {
                 Cấu trúc xã hội mới
               </h2>
               <p className="text-slate-300 leading-relaxed">
-                Hình thái KT-XH Cộng sản chủ nghĩa không xuất hiện ngay lập tức mà trải qua 2 giai đoạn:
+                Hình thái kinh tế - xã hội Cộng sản chủ nghĩa không xuất hiện ngay lập tức mà trải qua 2 giai đoạn:
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">1</div>
                   <div>
-                    <div className="font-semibold text-orange-400">Giai đoạn thấp (CNXH)</div>
+                    <div className="font-semibold text-orange-400">Giai đoạn thấp (Chủ nghĩa xã hội)</div>
                     <p className="text-sm text-slate-400">Thời kỳ quá độ, xây dựng cơ sở vật chất, văn hóa cần thiết về cơ bản.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-pink-600 text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">2</div>
                   <div>
-                    <div className="font-semibold text-pink-400">Giai đoạn cao (CNCS)</div>
+                    <div className="font-semibold text-pink-400">Giai đoạn cao (Chủ nghĩa cộng sản)</div>
                     <p className="text-sm text-slate-400">Phát triển toàn diện, làm theo năng lực – hưởng theo nhu cầu.</p>
                   </div>
                 </div>
@@ -134,13 +136,15 @@ const ChuNghiaXaHoiPage: React.FC = () => {
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4">
               <div className="text-7xl md:text-8xl font-bold text-slate-800/30">04</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-50">
+Theo V.I Lênin
+              </h2>
               <p className="text-slate-300 leading-relaxed">
-                Theo C.Mác và Ph.Ăngghen, hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển từ thấp đến cao qua hai giai đoạn
-              </p>
+     V.I.Lênin, từ thực tiễn nước Nga, đối với những nước chưa có chủ nghĩa tư bản phát triển cao “cần phải có một thời kì quá độ khá lâu dài từ chủ nghĩa tư bản lên chủ nghĩa xã hội”.              </p>
             </div>
             <div className="relative order-1 lg:order-2">
               <img 
-                src={hinhThaiKinhTeImg}
+                src={leninImg}
                 alt="Hình thái kinh tế - xã hội cộng sản chủ nghĩa" 
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
@@ -152,35 +156,29 @@ const ChuNghiaXaHoiPage: React.FC = () => {
             <div className="space-y-4">
               <div className="text-7xl md:text-8xl font-bold text-slate-800/30">05</div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-50">
-                Thời kỳ quá độ & VN
-              </h2>
+Theo V.I Lênin, từ thực tiễn nước Nga               </h2>
               <p className="text-slate-300 leading-relaxed">
-                Thực tiễn từ nước Nga và Việt Nam cho thấy:
-              </p>
+Thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản được hiểu theo hai nghĩa:             </p>
               <div className="space-y-3">
                 <div className="bg-slate-800/40 border border-slate-700 rounded-xl px-4 py-3">
-                  <div className="font-semibold text-slate-200 mb-1">V.I. Lênin</div>
+                  <div className="font-semibold text-slate-200 mb-1">Thứ nhất</div>
                   <p className="text-sm text-slate-400">
-                    Với nước chưa phát triển cao, thời kỳ quá độ là "những cơn đau đẻ kéo dài".
-                  </p>
+Đốì với các nước chưa trải qua chủ nghĩa tư bản phát triển, cần thiết phải có thời kỳ quá độ khá lâu dài từ chủ nghĩa tư bản lên chủ nghĩa xã hội "những cơn đau đẻ kéo dài"                  </p>
                 </div>
                 <div className="bg-slate-800/40 border border-slate-700 rounded-xl px-4 py-3">
-                  <div className="font-semibold text-slate-200 mb-1">Việt Nam</div>
+                  <div className="font-semibold text-slate-200 mb-1">Thứ hai</div>
                   <p className="text-sm text-slate-400">
-                    Đi lên từ nông nghiệp lạc hậu → Quá độ dài lâu, gian khổ là tất yếu.
+                    Đối với những nước đã trải qua chủ nghĩa tư bản phát triển, giữa chủ nghĩa tư bản và chu nghĩa cộng sản có một thời kỳ quá độ nhất định, thời kỳ cái biên cách mạng từ xã hội này sang xã hội kia, thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản.
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative order-1 lg:order-2">
               <img 
-                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80" 
+                src={leninJfifImg}
                 alt="Thực tiễn: Việt Nam đổi mới" 
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
-              <div className="absolute bottom-4 left-4 bg-slate-900/80 backdrop-blur px-4 py-2 rounded-lg text-xs text-slate-300">
-                Thực tiễn: Việt Nam đổi mới
-              </div>
             </div>
           </section>
 
