@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import QAPage from "./pages/QAPage";
 import ThanhTuuDoiMoiPage from "./pages/ThanhTuuDoiMoiPage";
 import DacTrung from "./pages/DacTrung";
+import ViDuPage from "./pages/ViDu";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path="/qa" element={<QAPage />} />
               <Route path="/thanh-tuu" element={<ThanhTuuDoiMoiPage />} />
               <Route path="/dac-trung" element={<DacTrung />} />
+              <Route path="/vi-du" element={<ViDuPage />} />
             </Routes>
           </div>
         </main>

@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Logo from "../../public/logo.webp";
 
+// ...existing code...
+
 const menu = [
   {
     label: "TRANG CHỦ",
@@ -32,11 +34,17 @@ const menu = [
     label: "Thành Tựu",
     to: "/thanh-tuu",
   },
+  {
+    label: "Ví Dụ",
+    to: "/vi-du",
+  },
   { label: "Quiz", to: "/quiz" },
   { label: "Chatbot", to: "/chatbot" },
   { label: "AI Usage", to: "/ai-usage" },
   { label: "Q&A", to: "/qa" },
 ];
+
+// ...existing code...
 
 const Header: React.FC = () => {
   const location = useLocation();
